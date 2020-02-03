@@ -61,7 +61,13 @@ public class Circle
     {
         moveHorizontal(-20);
     }
-
+    public void inputLocation(int x, int y)
+    {
+        erase();
+        xPosition = x;
+        yPosition = y;
+        draw();
+    }
     /**
      * Move the circle a few pixels up.
      */

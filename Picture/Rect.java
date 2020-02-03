@@ -89,7 +89,13 @@ public class Rect
         xPosition += distance;
         draw();
     }
-
+    public void inputLocation(int x, int y)
+    {
+        erase();
+        xPosition = x;
+        yPosition = y;
+        draw();
+    }
     /**
      * Move the square vertically by 'distance' pixels.
      */
@@ -158,7 +164,7 @@ public class Rect
         height = rectHeight;
         draw();
     }
-
+    
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
@@ -193,3 +199,4 @@ public class Rect
         }
     }
 }
+

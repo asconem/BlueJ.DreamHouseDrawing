@@ -44,7 +44,13 @@ public class Square
         erase();
         isVisible = false;
     }
-
+    public void inputLocation(int x, int y)
+    {
+        erase();
+        xPosition = x;
+        yPosition = y;
+        draw();
+    }
     /**
      * Move the square a few pixels to the right.
      */

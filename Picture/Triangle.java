@@ -62,7 +62,13 @@ public class Triangle
     {
         moveHorizontal(-20);
     }
-
+    public void inputLocation(int x, int y)
+    {
+        erase();
+        xPosition = x;
+        yPosition = y;
+        draw();
+    }
     /**
      * Move the triangle a few pixels up.
      */
