@@ -50,6 +50,12 @@
             HouseBody.changeSize(180);
             HouseBody.makeVisible();
             
+            Grass = new Square();
+            Grass.changeColor("green");
+            Grass.inputLocation(0,250);
+            Grass.changeSize(300);
+            Grass.makeVisible();
+            
             Stair1 = new Rect();
             Stair1.changeColor("black");
             Stair1.inputLocation(90,250);
@@ -121,12 +127,6 @@
             Chimney.inputLocation(60,36);
             Chimney.changeSize(20,40);
             Chimney.makeVisible();
-            
-            Grass = new Square();
-            Grass.changeColor("green");
-            Grass.inputLocation(0,250);
-            Grass.changeSize(300);
-            Grass.makeVisible();
             
         roof = new Triangle();
         roof.changeColor("magenta");
